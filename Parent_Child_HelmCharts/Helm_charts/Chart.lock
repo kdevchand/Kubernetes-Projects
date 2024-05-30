@@ -1,0 +1,24 @@
+dependencies:
+- name: mongodb
+  repository: file://./MongoDB
+  version: 0.1.0
+- name: postgres
+  repository: file://./Postgres
+  version: 0.1.0
+- name: rabbitmq
+  repository: file://./RabbitMQ
+  version: 0.1.0
+- name: auth-service
+  repository: file://./auth
+  version: 0.1.0
+- name: converter-service
+  repository: file://./converter
+  version: 0.1.0
+- name: gateway-service
+  repository: file://./gateway
+  version: 0.1.0
+- name: notification-service
+  repository: file://./notification
+  version: 0.1.0
+digest: sha256:b3729efd92c79b8a240bd53cb86c998f0d4997cc22164211e2b2ec1ff399210e
+generated: "2024-05-17T18:23:49.288403505+05:30"

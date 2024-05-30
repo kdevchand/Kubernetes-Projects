@@ -1,0 +1,29 @@
+apiVersion: v2
+name: parent-chart
+description: A Helm chart for deploying MongoDB, PostgreSQL, and RabbitMQ
+type: application
+version: 0.1.0
+appVersion: "1.0"
+
+dependencies:
+  - name: mongodb
+    version: 0.1.0
+    repository: "file://./MongoDB"
+  - name: postgres
+    version: 0.1.0
+    repository: "file://./Postgres"
+  - name: rabbitmq
+    version: 0.1.0
+    repository: "file://./RabbitMQ"
+  - name: auth-service
+    version: 0.1.0
+    repository: "file://./auth"
+  - name: converter-service
+    version: 0.1.0
+    repository: "file://./converter"
+  - name: gateway-service
+    version: 0.1.0
+    repository: "file://./gateway"
+  - name: notification-service
+    version: 0.1.0
+    repository: "file://./notification"
